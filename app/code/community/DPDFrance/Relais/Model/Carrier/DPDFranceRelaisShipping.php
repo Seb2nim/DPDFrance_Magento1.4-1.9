@@ -275,8 +275,8 @@ class DPDFrance_Relais_Model_Carrier_DPDFranceRelaisShipping extends Mage_Shippi
 
     public function getTrackingInfo($trackingNumber)
     {
-		$trackingUrlByRef = 'http://www.dpd.fr/tracer_'.$trackingNumber.'.html';
-		$trackingUrlByNb = 'http://www.dpd.fr/traces_'.$trackingNumber.'.html';
+		$trackingUrlByRef = 'http://www.dpd.fr/tracer_'.$trackingNumber;
+		$trackingUrlByNb = 'http://www.dpd.fr/traces_'.$trackingNumber;
 		$cargo = Mage::getStoreConfig('carriers/dpdfrrelais/cargo');
 		$longueurcargo = strlen($cargo);
 		$cargoutilise = substr($trackingNumber, -(int) $longueurcargo);

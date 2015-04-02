@@ -96,7 +96,7 @@ class DPDFrance_Export_TrackingController extends Mage_Adminhtml_Controller_Acti
 			$trackingNumber = $order->getIncrementID().'_'.$depot_code.$shipper_code;
 			$trackingTitle = 'DPD France';
 			$sendEmail = 1;
-			$comment = 'Cher client, vous pouvez suivre l\'acheminement de votre colis par DPD en cliquant sur le lien ci-contre : '.'<a target="_blank" href="http://www.dpd.fr/tracer_'.$trackingNumber.'.html'.'">Suivre ce colis DPD France</a>';
+			$comment = 'Cher client, vous pouvez suivre l\'acheminement de votre colis par DPD en cliquant sur le lien ci-contre : '.'<a target="_blank" href="http://www.dpd.fr/tracer_'.$trackingNumber.'">Suivre ce colis DPD France</a>';
 			$includeComment = 1;
 			
             $shipmentId = $this->_createTracking($order, $trackingNumber, $trackingTitle, $sendEmail, $comment, $includeComment);
@@ -184,7 +184,7 @@ class DPDFrance_Export_TrackingController extends Mage_Adminhtml_Controller_Acti
 		}
 		// Le trackingNumber est composé du n° de commande + le code agence + code cargo, intégré en un bloc dans l'URL
 		$trackingNumber = $order->getIncrementID().'_'.$depot_code.$shipper_code;
-		$trackingUrl = 'http://www.dpd.fr/tracer_'.$trackingNumber.'.html';
+		$trackingUrl = 'http://www.dpd.fr/tracer_'.$trackingNumber;
 		
 		$track = Mage::getModel('sales/order_shipment_track')
 			->setNumber($trackingNumber)

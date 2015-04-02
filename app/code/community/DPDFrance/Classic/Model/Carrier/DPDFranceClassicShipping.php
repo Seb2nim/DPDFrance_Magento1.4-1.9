@@ -274,8 +274,8 @@ class DPDFrance_Classic_Model_Carrier_DPDFranceClassicShipping extends Mage_Ship
 
     public function getTrackingInfo($trackingNumber)
     {
-		$trackingUrlByRef = 'http://www.dpd.fr/tracer_'.$trackingNumber.'.html';
-		$trackingUrlByNb = 'http://www.dpd.fr/traces_'.$trackingNumber.'.html';
+		$trackingUrlByRef = 'http://www.dpd.fr/tracer_'.$trackingNumber;
+		$trackingUrlByNb = 'http://www.dpd.fr/traces_'.$trackingNumber;
 		$cargo = Mage::getStoreConfig('carriers/dpdfrclassic/cargo');
 		$longueurcargo = strlen($cargo);
 		$cargoutilise = substr($trackingNumber, -(int) $longueurcargo);
