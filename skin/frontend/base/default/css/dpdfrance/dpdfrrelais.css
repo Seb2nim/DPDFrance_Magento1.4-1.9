@@ -514,7 +514,7 @@ div.header {
 
 .dpdfrrelaisboxcarto {
 	width:100%;
-	min-height: 66%; 
+	min-height: 62%; 
 	top: 0px;
 	left: 0px;
 	border-radius: 6px 6px 0px 0px;
@@ -794,11 +794,6 @@ input.ok_button:hover
     }
 }
 /* Condition verticale (Smartphone) */
-
-@media only screen and (max-height: 680px) {
-	.dpdfrrelaisboxcarto {min-height:30%;}
-}
-
 @media only screen and (max-height: 610px) {
 	.dpdfrrelaisboxcarto {display:none;}
 }
