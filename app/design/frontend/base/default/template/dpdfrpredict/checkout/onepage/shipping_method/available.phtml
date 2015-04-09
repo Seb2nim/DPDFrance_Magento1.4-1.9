@@ -51,7 +51,7 @@
 								<input id="address" name="address" type="text" class="relaypoint-input-address" value="<?php echo $this->htmlEscape($this->getAddress()->getStreet(1))?>"/><br>
 								<input id="zipcode" name="zipcode" type="text" class="relaypoint-input-zipcode" value="<?php echo $this->htmlEscape($this->getAddress()->getPostcode())?>"/>
 								<input id="city" name="city" type="text" class="relaypoint-input-city" value="<?php echo $this->htmlEscape($this->getAddress()->getCity())?>"/>
-								<button class="dpdfrbutton" onclick="fetchPoint('<?php echo substr(Mage::getUrl('relais/dpdfrancerelais/index', array('_secure' => true)),0,-1)?>','suggestion')" type="button" style="height: 20px;padding: 0;width: 36px;">
+								<button class="dpdfrbutton" onclick="fetchPoint('<?php echo substr(Mage::getUrl('dpdfrrelais/pickup/index', array('_secure' => true)),0,-1)?>','suggestion')" type="button" style="height: 20px;padding: 0;width: 36px;">
 									<span>OK</span>
 								</button>
 								<span id="loadingpointswait" style="display:none;">

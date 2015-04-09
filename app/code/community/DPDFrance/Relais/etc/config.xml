@@ -161,7 +161,7 @@
         <use>standard</use>
         <args>
            <module>DPDFrance_Relais</module>
-           <frontName>relais</frontName>
+           <frontName>dpdfrrelais</frontName>
            </args>
        </dpdfrrelais>
      </routers>
