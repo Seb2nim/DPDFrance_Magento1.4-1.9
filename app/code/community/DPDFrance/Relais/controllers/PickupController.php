@@ -46,7 +46,7 @@ class DPDFrance_Relais_PickupController extends Mage_Core_Controller_Front_Actio
     public function indexAction()
 	{
 		$address = $this->getRequest()->getParam('address');
-		$address = mb_convert_encoding(urldecode( $address),'UTF-8');
+		$address = mb_convert_encoding(urldecode($address),'UTF-8');
 		$address = self::stripAccents($address);
 		
 		$zipcode = $this->getRequest()->getParam('zipcode');

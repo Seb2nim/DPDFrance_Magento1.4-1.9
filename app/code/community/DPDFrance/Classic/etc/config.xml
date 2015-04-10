@@ -132,7 +132,7 @@
 </default>
 <modules>
 		<DPDFrance_Classic>
-			<version>5.0.0</version>
+			<version>5.1.1</version>
 			<depends>
 				<Mage_Shipping/>
 			</depends>
